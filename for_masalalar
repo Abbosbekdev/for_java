@@ -1,0 +1,188 @@
+package com.company;
+
+import java.awt.font.FontRenderContext;
+import java.util.Scanner;
+
+public class for_tsikl {
+    public static void main(String[] args) {
+        Scanner scanf = new Scanner(System.in);
+        //System.out.print("a = ");
+        //float a= scanf.nextFloat();
+        //System.out.print("b = ");
+        //float b =scanf.nextFloat();
+      //  System.out.print("x = ");
+      //  float x= scanf.nextFloat();
+        float z=1,y;
+        System.out.print("n = ");
+        int n = scanf.nextInt();
+     //1-masala
+        /*
+        for (int i =0;i<b;i++){
+            System.out.println(a);}
+    //2-masala
+        for (int i=a;i<=b;i++){
+            System.out.println(i);}
+    //3-masala
+        for (int i =b-1;i>a;i--){
+            System.out.println(i);}
+    //4-masala
+        for (int i=1;i<=10;i++){
+            System.out.println(i+" kg konfet narxi "+(i*a)+" so'm");
+        }
+     //5-masala
+        for (float i = (float) 0.1; i<=0.9;i++ ){
+            System.out.println(i+" kg konfet narxi "+(i*a)+" so'm");
+        }
+     //6-masala
+        for (float i = (float) 1.2; i<=2; i = (float) (i + 0.2)){
+            System.out.println(i+" kg konfet narxi "+(i*a)+" so'm");
+        }
+     //7-masala
+        int c = 0;
+        for (int i =a;i<=b;i++){
+            c += i;
+        }
+        System.out.println("yig'indi = "+c);
+    //8-masala
+        int k = 1;
+        for (int i =a;i<=b;i++){
+            k *= i;
+        }
+        System.out.println("yig'indi = "+k);
+     //9-masala
+        int m = 0;
+        for (int i =a;i<=b;i++){
+            m += i*i;
+        }
+        System.out.println("yig'indi = "+m);
+     //10-masala
+        for (int i=1; i<=a;i++){
+            x +=1./i;
+        }
+        System.out.println(x);
+     //11-masala
+        for (int i=a; i<=2*a; i++){
+            x +=i*i;
+        }
+        System.out.println("yig'indi : "+x);
+     //12-masala
+        for (float i = (float) 1.1;i<=a;i= (float) (i+0.1)){
+            z*=i;
+        }
+        System.out.println("ko'paytma : "+z);
+     //13-masala
+        for (float i = (float) 1.1; i<=a; i= (float) (i+0.2)){
+           x+=i;
+        }
+        for (float i = (float) 1.2; i<=a; i= (float) (i+0.2)){
+           y+=i;
+        }
+        System.out.println("yig'indi : "+(x-y));
+    //14-masala
+        for (int i =1;i<=a;i++){
+            x+=(2*i-1);
+        }
+        System.out.println("kvadrati : "+x);
+    //15-masala
+        for (int i=0;i<b;i++){
+            z*=a;
+        }
+        System.out.println("darajasi : "+z);
+     //16-masala
+        for (int i=0;i<b;i++){
+            z*=a;
+            System.out.println("darajasi : "+z);}
+     //17-masala
+        for (int i =0;i<=b;i++){
+            z= (int) Math.pow(a,i);
+            x+=z;
+            System.out.println("a ni "+i+" darajasi : "+z);
+        }
+        System.out.println("yig'indi : "+x);
+      //18-masala
+        for (int i =0;i<=b;i++){
+            z= (int)( Math.pow(a,i)*Math.pow(-1,i));
+            x+=z;
+        }
+        System.out.println("yig'indi : "+x);
+     //19-masala
+        for (int i=1;i<=a;i++){
+            z *=i;
+        }
+        System.out.println("n faktorial : "+z);
+    //20-masala
+        for (int i=1;i<=a;i++){
+            z *=i;
+            x+=z;
+        }
+        System.out.println("n faktorial : "+x);
+    //21-masala
+        for (int i=1;i<=n;i++){
+            z*=i;
+            x+=1/z;
+        }
+        System.out.println("x : "+x);
+     //22-masala
+        for (int i=1;i<=n;i++){
+            z*=i;
+            y= (float) Math.pow(x,i);
+            k+=y/z;
+        }
+        System.out.println("yig'indi : "+(k+1));
+     //23-masala
+        for (int i=0;i<=n;i++){
+            y= (float) Math.pow(x,2*i+1);
+            k+=(Math.pow(-1,i)*y/(2*i+1));
+        }
+        System.out.println("yig'indi : "+(k));
+    //24-masala
+        for (int i=0;i<=n;i++){
+            y= (float) Math.pow(x,2*i);
+            k+=(Math.pow(-1,i)*y/(2*i));
+        }
+        System.out.println("yig'indi : "+(k));
+     //25-masala
+        for (int i=1;i<=n;i++){
+            y*= x;
+            z= (float) Math.pow(-1,i-1);
+            k=y*z/i;
+        }
+        System.out.println("yig'indi : "+(k));
+    //26-masala
+        for (int i=1;i<n;i++){
+                z= (float) Math.pow(x,2*i+1);
+                y= (float) Math.pow(-1,i);
+                k=(z*y)/(2*i+1);
+        }
+        System.out.println("yig`indi : "+k);
+     //30-masala
+         for (int i=a;i<=b;i++){
+             k = (float) (1 - Math.sin(i));
+         }
+        System.out.println("k : "+k);
+    //31-masala
+        for (int i=1;i<=b;i++){
+            //k= (float) (1./(a-2));
+            y = (float) (2 + (1. /(1./(a-2))));
+            System.out.println(i+" chi had = "+y);}
+    //36-masala
+
+        System.out.print("k = ");
+        float k =scanf.nextFloat();
+        for (int i =1;i<=n;i++){
+            for (int j=1;j<=k;j++){
+                z= (float) Math.pow(i,k);
+            }
+            System.out.println(z);*/
+     //37-masala
+        System.out.print("k = ");
+        float k =scanf.nextFloat();
+        for (int i =1;i<=n;i++){
+            for (int j=1;j<=k;j++){
+                z= (float) Math.pow(i,j);
+            }
+            System.out.println(z);
+        }
+
+    }
+}
